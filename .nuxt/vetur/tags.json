@@ -1,20 +1,26 @@
 {
+  "FooterComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/FooterComponent.vue"
+  },
+  "LazyFooterComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/FooterComponent.vue"
+  },
   "HeaderComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/HeaderComponent.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/HeaderComponent.vue"
   },
   "LazyHeaderComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/HeaderComponent.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/HeaderComponent.vue"
   },
   "LoginComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/LoginComponent.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/LoginComponent.vue"
   },
   "LazyLoginComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/LoginComponent.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/LoginComponent.vue"
   },
   "Logo": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/Logo.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/Logo.vue"
   },
   "LazyLogo": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/components/Logo.vue"
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/Logo.vue"
   }
 }

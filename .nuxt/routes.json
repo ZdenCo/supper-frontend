@@ -1,9 +1,16 @@
 [
   {
-    "name": "Homepage",
-    "path": "/Homepage",
-    "component": "C:\\\\Users\\\\Zdeněk Kohout\\\\source\\\\repos\\\\Bakararska_Prace_Kohout\\\\src\\\\Application\\\\Supper.FrontEnd\\\\SupperVue\\\\pages\\\\Homepage.vue",
-    "chunkName": "pages/Homepage",
-    "_name": "_56f8d726"
+    "name": "homepage",
+    "path": "/homepage",
+    "component": "C:\\\\Users\\\\Zdeněk Kohout\\\\Desktop\\\\vuex\\\\supper-frontend\\\\pages\\\\homepage.vue",
+    "chunkName": "pages/homepage",
+    "_name": "_b3d0e308"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Zdeněk Kohout\\\\Desktop\\\\vuex\\\\supper-frontend\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7c804334"
   }
 ]

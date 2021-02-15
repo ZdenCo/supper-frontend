@@ -448,7 +448,7 @@ const globalPlugin = (context) => {
   };
 };
 
-const staticPath = "C:/Users/Zdeněk Kohout/source/repos/Bakararska_Prace_Kohout/src/Application/Supper.FrontEnd/SupperVue/.nuxt/static-json";
+const staticPath = "C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/.nuxt/static-json";
 const staticCache = {};
 function writeFile(key, value) {
   if (process.client || !process.static)

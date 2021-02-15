@@ -8,7 +8,7 @@
         </form>
         <!-- //predelat jmena trid a tu funkci  -->
         <h2>UserId: {{this.$store.state.userData.userId}}</h2>
-        <button v-on:click="setId">increment you fuck</button>
+        <button v-on:click="setId">Login</button>
         <p v-if="isAuth=false">authorized</p>
     </div>
 </template>
