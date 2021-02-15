@@ -1,0 +1,29 @@
+html{
+    min-height: 100vh;
+    width: 100vw;
+}
+#__nuxt{
+    @include wh(100%, 100%)
+}
+body{
+    color: orange;
+    margin: $margin-auto;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    max-width: $max-width;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222a36;
+    transition: all $anim-time ease-in-out;
+    
+    }
+    a{
+        text-decoration: none;
+        color: orange;
+    }
+
+
+
+

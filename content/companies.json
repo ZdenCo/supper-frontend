@@ -1,0 +1,9 @@
+{
+    "companyName": "Ataxa",
+    "masterPassword": "1234",
+    "Users":[{
+        "id": 1,
+        "firstname": "Danik",
+        "lastname": "Blanik"
+    }]
+}

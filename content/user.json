@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "username": "lopah",
+        "password": "1234",
+        "firstname": "Danik",
+        "lastname": "Blanik",
+        "role":"Ocean man"
+    },
+    {
+        "id": 2,
+        "username": "test",
+        "password": "test",
+        "firstname": "Adam",
+        "lastname": "Blink",
+        "role":"Big man"
+    },
+    {
+        "id": 3,
+        "username": "user",
+        "password": "poser",
+        "firstname": "Ser",
+        "lastname": "Moc",
+        "role":"Delnik"
+    }
+]

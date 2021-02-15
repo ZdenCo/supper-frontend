@@ -1,0 +1,46 @@
+$tb-padding-s: 0.8rem 0;
+$margin-auto : 0 auto;
+$max-width : 1200px;
+
+
+$bg-color: #222a36;
+$orange-color: orange;
+$white-color: white;
+$black-color: black;
+$grey-color: #bdbdbd;
+
+
+$anim-time: .4s;
+
+
+
+@mixin  text($positon) {
+    text-align: $positon;
+}
+@mixin border($thickness,$color,$radius: 0){
+    border: $thickness solid $color;
+    border-radius: $radius;
+}
+@mixin margin($sides,$value) {
+    @if(str-index($sides, $substring: "t")){
+        margin-top: $value;
+    }
+    @if(str-index($sides, $substring: "r")){
+        margin-right: $value;
+    }
+    @if(str-index($sides, $substring: "b")){
+        margin-bottom: $value;
+    }
+    @if(str-index($sides, $substring: "l")){
+        margin-left: $value;
+    }
+}
+@mixin flex($direction,$align){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+@mixin wh($x:100% ,$y: 100%){
+    width: $x;
+    height: $y;
+}
