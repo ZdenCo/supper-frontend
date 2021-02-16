@@ -20,5 +20,7 @@ export default {
 <style lang="scss">
     .Header_Main{
         background-color: darkgoldenrod;
+        display: flex;
+        flex-direction: row;
     }
 </style>

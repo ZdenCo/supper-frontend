@@ -16,6 +16,8 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 </style>
