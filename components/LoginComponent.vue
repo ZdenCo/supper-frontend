@@ -42,7 +42,7 @@ export default {
                 
             });
             if(this.authorizedUser === null){
-                    console.log("wrong pass or userame");
+                    window.alert("Wrong password or username")
                 }
         }
     }
@@ -51,6 +51,7 @@ export default {
 <style lang="scss">
 
     .Login_Main{
+        justify-content: center;
         transition: all $anim-time;
         background-color: transparent;
         @include flex(column,center);

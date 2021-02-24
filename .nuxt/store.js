@@ -17,6 +17,7 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
+  resolveStoreModules(require('..\\store\\topicStore.js'), 'topicStore.js')
   resolveStoreModules(require('..\\store\\userData.js'), 'userData.js')
 
   // If the environment supports hot reloading...
@@ -24,6 +25,7 @@ let store = {};
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
+      '..\\store\\topicStore.js',
       '..\\store\\userData.js',
     ], () => {
       // Update `root.modules` with the latest definitions.

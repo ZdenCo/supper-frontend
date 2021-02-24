@@ -22,5 +22,17 @@
   },
   "LazyLogo": {
     "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/Logo.vue"
+  },
+  "TutorialComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialComponent.vue"
+  },
+  "LazyTutorialComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialComponent.vue"
+  },
+  "TutorialLayout": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialLayout.vue"
+  },
+  "LazyTutorialLayout": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialLayout.vue"
   }
 }
