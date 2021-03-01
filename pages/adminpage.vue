@@ -39,11 +39,37 @@
                     </div> 
                </div>
                <div class="Admin_Users_Buttons">
-                   <button>Add</button>
+                   <button v-on:click="toggleCreate">Add</button>
                     <button>Modify</button>
                     <button>Remove</button>
                </div>
-               
+               <div v-if="createUser === true" class="Admin_User_Create Flex_Column">
+               <div class="Flex_Row">
+                   <label for="username">Prihlasovaci jmeno : </label>
+                    <input type="text" name="username">
+               </div>
+               <div class="Flex_Row">
+                   <label for="username">Heslo : </label>
+                    <input type="text" name="username">
+               </div>
+               <div  class="Flex_Row">
+                   <label for="username">Jmeno : </label>
+                    <input type="text" name="username">
+               </div>
+               <div class="Flex_Row">
+                   <label for="username">Prijmeni : </label>
+                    <input type="text" name="username">
+               </div>
+               <div class="Flex_Row">
+                   <label for="role">Pracovni pozice : </label>
+                   <select name="role" id="">
+                       <option value="" v-for="role in Company.Roles">{{role.name}}</option>
+                   </select>
+               </div>
+               <div class="Flex_Row Button">
+                   <button v-on:click="toggleCreate">Vytvorit</button>
+               </div>
+           </div>
                </div>
            </div>
        </div>
@@ -59,7 +85,8 @@ export default {
             Company,
             nextPage: false,
             selectedRole: '',
-            searchBar: ''
+            searchBar: '',
+            createUser: false
         }
         
     },
@@ -71,6 +98,9 @@ export default {
         },
     },
     methods:{
+        toggleCreate(){
+            this.createUser === false ? this.createUser = true : this.createUser = false;
+        },
         setRole(role){
             this.selectedRole = role;
         }
@@ -129,6 +159,7 @@ export default {
             .create{
                 padding: .5rem 1rem;
                 input{
+                    color: black;
                     border-radius: 5rem;
                     width: 15rem;
                 }
@@ -137,8 +168,45 @@ export default {
                 }
             }
         }
+        .Admin_User_Create{
+            position: relative;
+            background-color: #252525;
+            justify-content: center;
+            border: $orange-color 1px solid;
+            margin: 1rem 3rem;
+            overflow: visible;
+            padding: 3rem 8rem;
+            &:after{
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 1rem solid transparent;
+                border-right: 1rem solid transparent;
+                border-bottom: 1rem solid $orange-color;
+                position: absolute;
+                top: 0;
+                right: 8.4rem;
+                transform: translateY(-1.1rem);
+                z-index: 15;
+            }
+            .Button{
+                justify-content: flex-end !important;
+            }
+            input{
+                background-color: white;
+                border: none;
+            }
+            button{
+                width: 8rem;
+            }
+            .Flex_Row{
+                justify-content: space-between;
+                margin-bottom: 1rem;
+            }
+        }
         .Admin_Users{
             flex-grow: 1;
+            overflow-y: scroll;
             background-color: #2c2e2c;;
             padding: 1.5rem;
             .Admin_Table-headwrapper{
@@ -178,6 +246,7 @@ export default {
                     height: 2rem;
                     line-height: 2rem;
                     display: flex;
+                    overflow:hidden;
                     flex-direction: row;
                     text-align: left;
                     p{
