@@ -63,14 +63,14 @@ export default {
     main{
         display: flex;
         height: 100vh;
-        background-color:red;
+        background-color:$grey-color;
         justify-content: center;
     }
     form{
         
         overflow: auto;
         flex-direction: column;
-        background-color:black;
+        background-color:$grey-color;
         width: 100%;
         height: 100%;
         text-align: left;

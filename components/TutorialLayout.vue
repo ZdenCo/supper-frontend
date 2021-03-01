@@ -9,7 +9,7 @@
                 <p>{{tutorial.description}}</p>
         </div>
         
-        <button id="tutorialBtn" class="Tutorial_Layout_Button" v-if="isSet" v-on:click="unsetTutorial()">Zpet</button>
+        <button id="tutorialBtn" class="Tutorial_Layout_Button" v-if="isSet" v-on:click="unsetTutorial()">X</button>
         <TutorialComponent v-if="isSet" :tutorial="selectedTutorial" />
     </div>
 </template>
@@ -63,9 +63,11 @@ export default {
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
-        border: black 2px solid;
+        color: white;
+        border: white 2px solid;
         border-radius: 15%;
         padding: .5rem;
+        background-color: $grey-color;
         box-shadow: 6px 8px 4px rgba($color: #000000, $alpha: .25);
         @include wh(13rem,13rem);
         &:nth-child(n+5){
@@ -74,9 +76,12 @@ export default {
     }
     .Tutorial_Layout_Button{
         position: absolute;
-        background-color: orange;
-        top: 0;
-        left: 0;
+        background-color: $red-color;
+        border: 1px white solid;
+        color: white;
+        
+        top: 2rem;
+        right: 2rem;
         z-index: 10;
     }
 }

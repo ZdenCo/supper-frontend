@@ -24,8 +24,8 @@ export default {
 </script>
 <style lang="scss">
     .Header_Main{
-        border-bottom: 1px black solid;
-        background-color: darkgoldenrod;
+        border-bottom: 1px white solid;
+        background-color: $grey-color;
         display: flex;
         flex-direction: row;
         align-items: center;

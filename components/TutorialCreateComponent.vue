@@ -1,7 +1,7 @@
 <template>
     <div class="Tutorial_Create_Main">
         <main>
-            <button type="button" class="back" v-on:click="emitBack()">Back</button>
+            <button type="button" class="back" v-on:click="emitBack()">X</button>
             <form action="POST">
                 <h2>{{Topic.name}}</h2>
                <div class="Problem_Row Flex_Row">
@@ -98,12 +98,15 @@ export default {
         position: absolute;
         left: 0;
         top: 0;
-        background-color: black;
+        background-color: $grey-color;
         overflow: auto;
         .back{
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 2rem;
+            background-color: $red-color;
+            border: 1px solid white;
+            right: 10%;
+            color: white;
         }
         h2{
             text-align: center;

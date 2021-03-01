@@ -107,17 +107,19 @@ export default {
             width: 25vw;
             display: flex;
             flex-direction: column;
-            background-color: blue;
-            border-right: black solid 1px;
+            background-color: $grey-color;
+            border-right: white solid 1px;
             .search{
                 padding: .2rem 1rem;
                 height: 2.5rem;
+                margin-top: 1.2rem;
             }
             
             .Admin_Role{
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
+                color: white;
                 height: 2.5rem;
                 padding: .2rem 1rem;
                 line-height: 2.1rem;
@@ -137,19 +139,21 @@ export default {
         }
         .Admin_Users{
             flex-grow: 1;
-            background-color: blueviolet;
+            background-color: #2c2e2c;;
             padding: 1.5rem;
             .Admin_Table-headwrapper{
                 padding: 0 1.5rem;
                 height: 3rem;
-                background-color: yellow;
-                border: 1px solid black;
+                color: white;
+                background-color: #3f3f3f;
+                border: 1px solid white;
                 box-shadow: 0 4px 4px rgba($color: #000000, $alpha: .25);
             }
             .Admin_Table-head{
                 display: flex;
                 flex-direction: row;
                 text-align: left;
+                
                 p{
                     width: 15%;
                     display: flex;
@@ -167,6 +171,7 @@ export default {
                     overflow: auto;
                     border: 1px solid black;
                     margin: 0 1.5rem;
+                    background-color: #3f3f3f;
                 }
                 .Admin_User{
                     border-bottom: 1px black solid;

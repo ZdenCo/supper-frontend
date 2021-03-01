@@ -23,17 +23,21 @@ export default {
         left: 0;
         top: 0;
         overflow: auto;
-        background: white;
+        background: $grey-color;
         @include wh(100%,100%);
         display: flex;
         flex-direction: column;
         padding: 2rem;
         text-align: left;
         .Tutorial_Text{
-            color: black;
-            padding-right: 10rem;
-            border: 1px solid black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid white;
             margin-top: 1rem;
+            li{
+                margin: 1rem 1.5rem;
+            }
         }
 
         

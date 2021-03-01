@@ -85,14 +85,23 @@ export default {
 <style scoped lang="scss">
 .Home_Main{
     height: 100vh;
+    button{
+        background-color: $orange-color;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
 }
 .Home_Topic_Add{
     display: flex;
     justify-content: center;
     flex-direction: column;
     input{
+        
         border-radius: 5rem;
-        height: 1rem;
+        height: 1.2rem;
+        padding-left: .3rem;
         margin:0.3rem;
         margin: .3rem 0 .3rem .8rem;
     }
@@ -100,7 +109,7 @@ export default {
 }
 .Home_Content{
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: .9);
+    background-color: $grey-color;
     display: grid;
     transition: 2s all;
     grid-template-columns: 20% auto;
@@ -108,7 +117,7 @@ export default {
     .stretch{
         position: absolute;
         width: 5rem;
-        background-color: black;
+        background-color: $grey-color;
         bottom: 1rem;
         right: calc(50% - 2.5rem);
         
@@ -127,12 +136,13 @@ export default {
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        background: red;
+        background: #2c2e2c;
         overflow: auto;
     }
     .Home_Topic-wrapper{
-        background-color: royalblue;
+        background-color: $grey-color;
         display: flex;
+        color: white;;
         position: relative;
         flex-direction: column;
         grid-column-start: 1;
@@ -140,27 +150,32 @@ export default {
         grid-row-start: 2;
         grid-row-end: 3;
         overflow: auto;
-        border: 1px solid black;
+        border-right: 1px solid white;
         scrollbar-width: thin;
         .search{
-        margin: 0.2rem 0.8rem;
+        margin: 1rem 0.8rem;
+        
     }
         
     }
     .Home_New_Button{
         position: absolute;
-        background-color: green;
+        background-color: $grey-color;
         bottom: 5rem;
         right: 5rem;
     }
     .Home_Topic{
         display: flex;
-        border: 1px black solid;
+        border-bottom: 1px white solid;
         justify-content: flex-start;
         text-align: left;
         cursor: pointer;
         transition: all .3s;
         @include wh(100%, 4rem);
+        &:nth-child(2){
+            border-top: 1px solid white;
+            
+        }
         h3{
             transition: all .3s;
             line-height: 4rem;
