@@ -5,7 +5,8 @@
         "password": "1234",
         "firstname": "Danik",
         "lastname": "Blanik",
-        "role":"Ocean man"
+        "role":"Ocean man",
+        "isAdmin":false
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "password": "test",
         "firstname": "Adam",
         "lastname": "Blink",
-        "role":"Big man"
+        "role":"Big man",
+        "isAdmin":true
     },
     {
         "id": 3,
@@ -21,6 +23,7 @@
         "password": "poser",
         "firstname": "Ser",
         "lastname": "Moc",
-        "role":"Delnik"
+        "role":"Delnik",
+        "isAdmin":false
     }
 ]

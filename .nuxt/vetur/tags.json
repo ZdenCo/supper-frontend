@@ -1,9 +1,15 @@
 {
-  "FooterComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/FooterComponent.vue"
+  "AddTutorialComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/AddTutorialComponent.vue"
   },
-  "LazyFooterComponent": {
-    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/FooterComponent.vue"
+  "LazyAddTutorialComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/AddTutorialComponent.vue"
+  },
+  "ErrorComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/ErrorComponent.vue"
+  },
+  "LazyErrorComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/ErrorComponent.vue"
   },
   "HeaderComponent": {
     "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/HeaderComponent.vue"
@@ -28,6 +34,12 @@
   },
   "LazyTutorialComponent": {
     "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialComponent.vue"
+  },
+  "TutorialCreateComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialCreateComponent.vue"
+  },
+  "LazyTutorialCreateComponent": {
+    "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialCreateComponent.vue"
   },
   "TutorialLayout": {
     "description": "Auto imported from C:/Users/Zdeněk Kohout/Desktop/vuex/supper-frontend/components/TutorialLayout.vue"

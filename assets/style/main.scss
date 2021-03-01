@@ -26,6 +26,24 @@ body{
         text-decoration: none;
         color: orange;
     }
+    .Flex_Column{
+        display: flex;
+        flex-direction: column;
+    }
+    .Flex_Row{
+        display: flex;
+        flex-direction: row;
+    }
+    .search{
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 1rem;
+        .searchBar{
+            width: 100%;
+            border-radius: 5rem;
+        }
+    }
     .button-active{
         transition: all .3s;
         font-weight: bold;

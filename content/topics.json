@@ -2,20 +2,28 @@
     "topics":[
         {
             "id": 1,
-            "name": "Topic 1",
-            "description": "jdflksdjfglkdsfjgbkldsjgfbkljdsbgklsdjbgfkldsjbgfklsjdbgfkljdsbftestosteron",
+            "name": "Tiskárny",
+            "description": "tiskárny v 5. patře",
             "tutorials": [
                 {
-                    "name": "Problem 1",
-                    "desrciption": "Error 250910",
+                    "name": "Konika Minolta C220",
+                    "description": "Zrušit úlohy ve frontě",
                     "Texts":[
                         {
                         "image": "",
-                        "text":"Krok jedna daat tam bla bla"
+                        "text":"Přihlásit se do tiskárny"
                         },
                         {
                         "image": "",
-                        "text":"Krok dva daat tam bla bla"
+                        "text":"Kliknout na tlačítko TISKOVÁ FRONTA"
+                        },
+                        {
+                            "image": "",
+                            "text":"V tabulce úloh vybrat úlohu kterou je potřeba odstranit"
+                        },
+                        {
+                            "image": "",
+                            "text":"V pravo dole se ukáže tlačítko odstranit úlohu"
                         }
                     ]
                 }
@@ -23,26 +31,44 @@
         },
         {
             "id": 2,
-            "name": "Topic 2",
+            "name": "Microsoft Word",
             "description": "jdflksdjfglkdsfjgbkldsjgfbkljdsbgklsdjbgfkldsjbgfklsjdbgfkljdsbftestosteron",
             "tutorials": [
                 {
-                    "name": "Problem 2",
-                    "desrciption": "Error 250910",
+                    "name": "Vycentrování textu v buňce",
+                    "description": "",
                     "Texts":[
                         {
                         "image": "",
-                        "text":"Krok jedna daat tam bla bla"
+                        "text":"V horní liště nakliknout položku Nástroje tabulky > Rozložení "
                         },
                         {
                         "image": "",
-                        "text":"Krok dva daat tam bla bla"
+                        "text":"V podsložce zarovnání vyberte kam se bude text zarovnávat"
                         }
                     ]
                 },
                 {
-                    "name": "Problem 3",
-                    "desrciption": "Error 250910",
+                    "name": "Dokument se otevírá pouze pro čtení",
+                    "description": "Error 250910",
+                    "Texts":[
+                        {
+                        "image": "",
+                        "text":"Zjistěte jestli není dokument otevřený na jiném počítači"
+                        },
+                        {
+                        "image": "",
+                        "text":"Dokument lze překopírovat k sobě"
+                        },
+                        {
+                            "image": "",
+                            "text":"Pokuste se dokument přeuložit"
+                            }
+                    ]
+                },
+                {
+                    "name": "Problem 4",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -56,7 +82,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -70,7 +96,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -84,21 +110,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
-                    "Texts":[
-                        {
-                        "image": "",
-                        "text":"Krok jedna daat tam bla bla"
-                        },
-                        {
-                        "image": "",
-                        "text":"Krok dva daat tam bla bla"
-                        }
-                    ]
-                },
-                {
-                    "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -120,7 +132,7 @@
             "tutorials": [
                 {
                     "name": "Problem 2",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -134,7 +146,7 @@
                 },
                 {
                     "name": "Problem 3",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -148,7 +160,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -162,7 +174,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -176,7 +188,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -190,7 +202,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -212,7 +224,7 @@
             "tutorials": [
                 {
                     "name": "Problem 2",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -226,7 +238,7 @@
                 },
                 {
                     "name": "Problem 3",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -240,7 +252,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -254,7 +266,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -268,7 +280,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -282,7 +294,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -304,7 +316,7 @@
             "tutorials": [
                 {
                     "name": "Problem 2",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -318,7 +330,7 @@
                 },
                 {
                     "name": "Problem 3",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -332,7 +344,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -346,7 +358,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -360,7 +372,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -374,7 +386,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -396,7 +408,7 @@
             "tutorials": [
                 {
                     "name": "Problem 2",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -410,7 +422,7 @@
                 },
                 {
                     "name": "Problem 3",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -424,7 +436,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -438,7 +450,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -452,7 +464,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",
@@ -466,7 +478,7 @@
                 },
                 {
                     "name": "Problem 4",
-                    "desrciption": "Error 250910",
+                    "description": "Error 250910",
                     "Texts":[
                         {
                         "image": "",

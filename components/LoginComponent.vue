@@ -5,9 +5,12 @@
         <form action="">
             <input class="Login_Input" id="username" v-model="username" placeholder="username">
             <input class="Login_Input" id="password" v-model="password" type="password" placeholder="password">
+            <div class="Login_Buttons">
+            <nuxt-link to="adminpage"><button class="Login_Button">Login as Administrator</button></nuxt-link>
+            <button class="Login_Button" v-on:click="setId">Login</button>
+        </div>
         </form>
-        <button class="Login_Button" v-on:click="setId">Login</button>
-        <nuxt-link to="/" class="button">Go back ></nuxt-link>
+        
     </div>
 </template>
 <script>
@@ -18,7 +21,7 @@ export default {
          username: null,
          password: null,
          Users,
-         authorizedUser: null
+         authorizedUser: null,
      }
     },
     mounted() {
@@ -79,12 +82,24 @@ export default {
             }
 
         }
+        .Login_Buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a{
+                flex-grow: 1;
+                padding-right: 2rem;
+                .Login_Button{
+                    width: 100%;
+                }
+            }
+        }
         .Login_Button{
             @include margin(tb,.5rem);
             @include wh(7rem,2rem);
-            background-color: transparent;
+            background-color: $orange-color;
+            color: white;
             @include border(2px,$orange-color,5px);
-            color: $orange-color;
             font-weight: 700;
             transition: all $anim-time;
             &:hover{

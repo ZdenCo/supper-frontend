@@ -12,10 +12,17 @@
                 <div class="search">
                     <input type="text" class="searchBar" v-model="searchBar" />
                 </div>
-                
+                <div class="Home_Topic">
+                    <div class="Home_Topic_Add">
+                    <input type="text" placeholder="add new role">
+                    <input type="text" placeholder="add new role">
+                </div>
+                <button>+</button>
+            </div>
             <div class="Home_Topic" v-for="topic in filteredTopics" v-on:click="setTopic(topic)">
                     <h3>{{topic.name}}</h3>
             </div>
+            
             </div>
                 <div class="Home_Tutorial">
                 <TutorialLayout v-if="selectedTopic != null" :topic="selectedTopic"/>
@@ -57,6 +64,11 @@ export default {
         setTopic(topic){
             this.$store.commit('topicStore/setTopic', topic.name);
             this.selectedTopic = topic;
+            var el = document.getElementById('tutorial')
+            if (el != null) {
+                el.style.display = "none";
+                document.getElementById('tutorialBtn').style.display = "none";
+            }
         },
         onChildClick(value) {
         this.authUser = value;
@@ -65,7 +77,7 @@ export default {
         onChildLogOut(){
             this.authUser = null;
             this.isSigned = false;
-        }
+        },
     }
 }
 </script>
@@ -73,6 +85,18 @@ export default {
 <style scoped lang="scss">
 .Home_Main{
     height: 100vh;
+}
+.Home_Topic_Add{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    input{
+        border-radius: 5rem;
+        height: 1rem;
+        margin:0.3rem;
+        margin: .3rem 0 .3rem .8rem;
+    }
+    
 }
 .Home_Content{
     height: 100%;
@@ -104,6 +128,7 @@ export default {
         grid-row-start: 2;
         grid-row-end: 3;
         background: red;
+        overflow: auto;
     }
     .Home_Topic-wrapper{
         background-color: royalblue;
@@ -114,38 +139,41 @@ export default {
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        overflow: scroll;
+        overflow: auto;
+        border: 1px solid black;
         scrollbar-width: thin;
         .search{
-            height: 2rem;
-            display: flex;
-            flex-direction: row;
-            .searchBar{
-                width: 100%;
-            }
-        }
+        margin: 0.2rem 0.8rem;
+    }
         
+    }
+    .Home_New_Button{
+        position: absolute;
+        background-color: green;
+        bottom: 5rem;
+        right: 5rem;
     }
     .Home_Topic{
         display: flex;
-        justify-content: center;
-        text-align: center;
+        border: 1px black solid;
+        justify-content: flex-start;
+        text-align: left;
         cursor: pointer;
         transition: all .3s;
         @include wh(100%, 4rem);
         h3{
             transition: all .3s;
             line-height: 4rem;
+            padding-left: 1rem;
         }
-        &:nth-child(2n){
-            background-color: rgba($color: #000000, $alpha: .4)
+        button{
+                height: 3rem;
+                width: 3rem;
+                margin: 0.5rem;
+                border-radius: 5rem;
         }
         &:hover{
-            height: 5rem;
-            box-shadow: inset 0 0 10px rgba($color: #000000, $alpha: .8);
-            h3{
-                line-height: 5rem;
-            }
+            box-shadow: inset 0 0 10px rgba($color: #000000, $alpha: .3);
         }
     }
 }

@@ -1,9 +1,18 @@
 {
-    "companyName": "Ataxa",
+    "companyName": "Company name",
     "masterPassword": "1234",
-    "Users":[{
+    "Admins":[{
         "id": 1,
         "firstname": "Danik",
         "lastname": "Blanik"
-    }]
+    }],
+    "Roles":[
+        {
+        "name":"It Administrator"
+        },
+        {
+            "name":"Manager"
+        }
+        
+]
 }

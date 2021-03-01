@@ -1,9 +1,9 @@
 <template>
     <div class="Header_Main">
-        <h2 class="Header_CompanyName">{{company}}</h2>
+        <h1 class="Header_CompanyName">{{company}}</h1>
         <div class="Header_Welcome">
-            <p>Welcome {{firstname}} {{lastname}}</p>
-            <p v-on:click="emitLogOut">Log out</p>
+            <p>Welcome {{firstname}} {{lastname}} </p>
+            <p class="LogOut" v-on:click="emitLogOut">Log out</p>
         </div>
     </div>
 </template>
@@ -24,15 +24,19 @@ export default {
 </script>
 <style lang="scss">
     .Header_Main{
+        border-bottom: 1px black solid;
         background-color: darkgoldenrod;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding-right:3%;
-        padding-left: 7%;
+        padding-left: 1.5rem;
         .Header_Welcome{
             text-align: right;
+        }
+        .LogOut{
+            cursor: pointer;
         }
     }
 </style>
