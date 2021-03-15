@@ -4,15 +4,18 @@
        <div class="Admin_Main_Content">
            <div class="Admin_Roles">
                <div class="search">
-                    <input type="text" class="searchBar" v-model="searchBar" />
+                    <input type="text" placeholder="Vyhledat pozici" class="searchBar" v-model="searchBar" />
                 </div>
                 <div class="Admin_Role create">
-                    <input type="text" placeholder="add new role">
-                    <button>+</button>
+                    <input type="text" placeholder="Název nové pozice">
+                    <button class="modify">+</button>
                 </div>
-               <div class="Admin_Role" v-for="role in filteredRoles" v-on:click="setRole(role)">
+               <div class="Admin_Role " v-for="role in filteredRoles" v-on:click="setRole(role)">
                     <h3>{{role.name}}</h3>
-                    <p>></p>
+                    <div class="Flex_Row">
+                        <button class="modify">:</button>
+                        <button class="delete">X</button>
+                    </div>
                 </div>
            </div>
            <div class="Admin_Users">
@@ -20,11 +23,11 @@
                    <div class="Admin_Table-headwrapper">
                        <div class="Admin_Table-head">
                         <p>Id</p>
-                        <p>Firstname</p>
-                        <p>Lastname</p>
-                        <p>Role</p>
-                        <p>Number of topics</p>
-                        <p>Number of solutions</p>
+                        <p>Jméno</p>
+                        <p>Příjmení</p>
+                        <p>Pracovní pozice</p>
+                        <p>Počet okruhů</p>
+                        <p>Počet návodů</p>
                </div>
                    </div>
                     <div class="Admin_Users-wrapper">
@@ -39,13 +42,13 @@
                     </div> 
                </div>
                <div class="Admin_Users_Buttons">
-                   <button v-on:click="toggleCreate">Add</button>
-                    <button>Modify</button>
-                    <button>Remove</button>
+                   <button v-on:click="toggleCreate">Přidat</button>
+                    <button>Změnit</button>
+                    <button>Odebrat</button>
                </div>
                <div v-if="createUser === true" class="Admin_User_Create Flex_Column">
                <div class="Flex_Row">
-                   <label for="username">Prihlasovaci jmeno : </label>
+                   <label for="username">Přihlašovací jméno : </label>
                     <input type="text" name="username">
                </div>
                <div class="Flex_Row">
@@ -53,11 +56,11 @@
                     <input type="text" name="username">
                </div>
                <div  class="Flex_Row">
-                   <label for="username">Jmeno : </label>
+                   <label for="username">Jméno : </label>
                     <input type="text" name="username">
                </div>
                <div class="Flex_Row">
-                   <label for="username">Prijmeni : </label>
+                   <label for="username">Příjmení : </label>
                     <input type="text" name="username">
                </div>
                <div class="Flex_Row">
@@ -67,7 +70,7 @@
                    </select>
                </div>
                <div class="Flex_Row Button">
-                   <button v-on:click="toggleCreate">Vytvorit</button>
+                   <button v-on:click="toggleCreate">Vytvořit</button>
                </div>
            </div>
                </div>
@@ -118,6 +121,31 @@ export default {
     .Header_Main{
         height: 10vh;
     }
+    .button{
+        background-color: $orange-color;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+    .delete{
+        background-color: $red-color;
+        color: $white-color;
+        font-size: 1.5rem;
+        font-weight: normal;
+        height: 100%;
+        width: 1.75rem;
+        border: none;
+    }
+    .modify{
+        border: none;
+        color: $white-color;
+        width: 1.75rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color: $orange-color;
+        height: 100%;
+    }
     .Admin_Users_Buttons{
                 margin: 0 1.5rem;
                 display: flex;
@@ -151,7 +179,7 @@ export default {
                 width: 100%;
                 color: white;
                 height: 2.5rem;
-                padding: .2rem 1rem;
+                padding-left: 1rem;
                 line-height: 2.1rem;
                 border-bottom: 1px solid black;
                 text-align: left;
@@ -164,7 +192,7 @@ export default {
                     width: 15rem;
                 }
                 button{
-                    border-radius: 5rem;
+                        line-height: .1rem;                 
                 }
             }
         }

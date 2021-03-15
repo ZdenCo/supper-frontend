@@ -2,11 +2,16 @@
     <div class="Tutorial_Layout_Main">
         <TutorialCreateComponent v-on:goBack="toggleAdd" v-if="addTutorial===true" :Topic="topic"/>
         <div class="Tutorial_Layout_Box" v-on:click="toggleAdd()">
-                <h2>Add new tutorial</h2>
+                <h2>Přidat návod</h2>
         </div>
         <div class="Tutorial_Layout_Box" v-on:click="setTutorial(tutorial)" v-for="tutorial in topic.tutorials">
                 <h2>{{tutorial.name}}</h2>
                 <p>{{tutorial.description}}</p>
+                <div class="buttons Flex_Row">
+                    <button class="modify">:</button>
+                    <button class="delete">X</button>
+                </div>
+                
         </div>
         
         <button id="tutorialBtn" class="Tutorial_Layout_Button" v-if="isSet" v-on:click="unsetTutorial()">X</button>
@@ -60,6 +65,7 @@ export default {
     }
     .Tutorial_Layout_Box{
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
@@ -72,6 +78,26 @@ export default {
         @include wh(13rem,13rem);
         &:nth-child(n+5){
             margin-top: 1rem;
+        }
+        .buttons{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 3rem;
+            button{
+                width: 1.5rem;
+                background-color: transparent;
+                border: none;
+                font-weight: bold;
+                font-size: 1.3rem;
+                
+            }
+            .delete{
+                    color: $red-color;
+                }
+                .modify{
+                    color: $orange-color;
+                }
         }
     }
     .Tutorial_Layout_Button{

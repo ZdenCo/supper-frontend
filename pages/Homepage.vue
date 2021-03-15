@@ -10,17 +10,21 @@
                 v-on:childToParentLogOut="onChildLogOut" />
             <div id="Topics" class="Home_Topic-wrapper">
                 <div class="search">
-                    <input type="text" class="searchBar" v-model="searchBar" />
+                    <input type="text" class="searchBar" placeholder="Vyhledat okruh" v-model="searchBar" />
                 </div>
                 <div class="Home_Topic">
                     <div class="Home_Topic_Add">
-                    <input type="text" placeholder="add new role">
-                    <input type="text" placeholder="add new role">
+                    <input type="text" placeholder="Nazev noveho okruhu">
+                    <input type="text" placeholder="Popis noveho okruhu">
                 </div>
                 <button>+</button>
             </div>
-            <div class="Home_Topic" v-for="topic in filteredTopics" v-on:click="setTopic(topic)">
+            <div class="Home_Topic Flex_Row" v-for="topic in filteredTopics" v-on:click="setTopic(topic)">
                     <h3>{{topic.name}}</h3>
+                    <div class="Flex_Row">
+                    <button class="delete">X</button>
+                    <button class="modify">:</button>
+                    </div>
             </div>
             
             </div>
@@ -85,12 +89,31 @@ export default {
 <style scoped lang="scss">
 .Home_Main{
     height: 100vh;
+
     button{
         background-color: $orange-color;
         font-size: 2rem;
+        width: 3.5rem;
         color: white;
         font-weight: bold;
         border: none;
+        
+    }
+    .delete{
+        background-color: $red-color;
+        color: $white-color;
+        font-size: 1.5rem;
+        font-weight: normal;
+        height: 100%;
+        width: 1.75rem;
+    }
+    .modify{
+        color: $white-color;
+        width: 1.75rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color: $orange-color;
+        height: 100%;
     }
 }
 .Home_Topic_Add{
@@ -166,8 +189,9 @@ export default {
     }
     .Home_Topic{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         border-bottom: 1px white solid;
-        justify-content: flex-start;
         text-align: left;
         cursor: pointer;
         transition: all .3s;
@@ -182,10 +206,11 @@ export default {
             padding-left: 1rem;
         }
         button{
-                height: 3rem;
-                width: 3rem;
-                margin: 0.5rem;
-                border-radius: 5rem;
+                // height: 3rem;
+                // width: 3rem;
+                // margin: 0.5rem;
+                // border-radius: 5rem;
+               
         }
         &:hover{
             box-shadow: inset 0 0 10px rgba($color: #000000, $alpha: .3);

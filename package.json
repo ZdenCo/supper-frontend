@@ -10,6 +10,7 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "@nuxtjs/composition-api": "^0.19.1",
     "jquery": "^3.5.1",
     "nuxt": "^2.13.0"

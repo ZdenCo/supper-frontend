@@ -6,41 +6,41 @@
                 <h2>{{Topic.name}}</h2>
                <div class="Problem_Row Flex_Row">
                    <div class="Flex_Column left">
-                        <h3 for="name">Problem name</h3>
+                        <h3 for="name">Název problému:</h3>
                         <input type="text">
-                        <h3 for="name">Describe the problem in few words</h3>
+                        <h3 for="name">Krátký popis problému:</h3>
                         <input type="text">
                    </div>
                    <div class="Flex_Column right">
-                       <h3>Who will see this solution</h3>
+                       <h3>Kdo uvidí tneto návod:</h3>
                        <div class="Flex_Row">
                            <input type="checkbox">
-                           <label for="">Only me</label>
+                           <label for="">Jen já</label>
                        </div>
                        <div class="Flex_Row">
                            <input type="checkbox">
-                           <label for="">Only me</label>
+                           <label for="">Manager</label>
                        </div>
                        <div class="Flex_Row">
                            <input type="checkbox">
-                           <label for="">Only me</label>
+                           <label for="">IT Administrátor</label>
                        </div>
                    </div>
                </div>
                
                <div v-for="step in this.Steps">
                    <div class="Problem_Row">
-                        <h4 for="ProblemStep">{{step}}. step</h4>
+                        <h4 for="ProblemStep">{{step}}. krok</h4>
                         <textarea name="ProblemStep" type="text" ></textarea>
                     </div>
                </div>
                <div class="Tutorial_Create_Bottom">
                    <div>
-                    <button type="button" v-on:click="Steps++">+</button>
-                   <button type="button" v-on:click="Steps--">-</button>
+                    <button type="button" v-on:click="Steps++">Přidat krok</button>
+                   <button type="button" v-on:click="Steps--">Odebrat krok</button>
                     </div>
                     <div>
-                        <button type="button" class="apply" v-on:click="">Submit</button>
+                        <button type="button" class="apply" v-on:click="">Potvrdit</button>
                     </div>
                </div>
             </form>
@@ -96,6 +96,7 @@ export default {
         height: 100%;
         width: 100%;
         position: absolute;
+        z-index: 100;
         left: 0;
         top: 0;
         background-color: $grey-color;

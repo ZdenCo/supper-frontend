@@ -1,18 +1,19 @@
 {
-    "companyName": "Company name",
+    "companyName": "Název společnosti",
     "masterPassword": "1234",
     "Admins":[{
         "id": 1,
-        "firstname": "Danik",
-        "lastname": "Blanik"
+        "firstname": "Admin",
+        "lastname": "Admin",
+        "username": "admin",
+        "password": "1234"
     }],
     "Roles":[
         {
         "name":"It Administrator"
         },
         {
-            "name":"Manager"
-        }
-        
+        "name":"Manager"
+        }     
 ]
 }

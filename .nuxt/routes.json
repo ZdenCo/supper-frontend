@@ -3,14 +3,12 @@
     "name": "adminpage",
     "path": "/adminpage",
     "component": "C:\\\\Users\\\\Zdeněk Kohout\\\\Desktop\\\\vuex\\\\supper-frontend\\\\pages\\\\adminpage.vue",
-    "chunkName": "pages/adminpage",
-    "_name": "_6b47b480"
+    "chunkName": "pages/adminpage"
   },
   {
     "name": "homepage",
     "path": "/homepage",
     "component": "C:\\\\Users\\\\Zdeněk Kohout\\\\Desktop\\\\vuex\\\\supper-frontend\\\\pages\\\\homepage.vue",
-    "chunkName": "pages/homepage",
-    "_name": "_b3d0e308"
+    "chunkName": "pages/homepage"
   }
 ]

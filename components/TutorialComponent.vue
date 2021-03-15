@@ -30,13 +30,17 @@ export default {
         padding: 2rem;
         text-align: left;
         .Tutorial_Text{
-            color: white;
+            color: $white-color;
+            font-weight: bold;
             display: flex;
+            background-color: rgba($color: $white-color, $alpha: .0);
             flex-direction: column;
-            border: 1px solid white;
+            border: 3px solid $orange-color;
+            padding: 1rem;
             margin-top: 1rem;
             li{
                 margin: 1rem 1.5rem;
+
             }
         }
 

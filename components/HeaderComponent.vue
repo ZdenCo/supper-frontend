@@ -2,8 +2,8 @@
     <div class="Header_Main">
         <h1 class="Header_CompanyName">{{company}}</h1>
         <div class="Header_Welcome">
-            <p>Welcome {{firstname}} {{lastname}} </p>
-            <p class="LogOut" v-on:click="emitLogOut">Log out</p>
+            <p>Vítejte {{firstname}} {{lastname}} </p>
+            <p class="LogOut" v-on:click="emitLogOut">Odhlásit</p>
         </div>
     </div>
 </template>
