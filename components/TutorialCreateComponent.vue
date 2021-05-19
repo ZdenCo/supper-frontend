@@ -12,7 +12,7 @@
                         <input type="text">
                    </div>
                    <div class="Flex_Column right">
-                       <h3>Kdo uvidí tneto návod:</h3>
+                       <h3>Kdo uvidí tento návod:</h3>
                        <div class="Flex_Row">
                            <input type="checkbox">
                            <label for="">Jen já</label>
